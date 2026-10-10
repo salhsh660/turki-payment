@@ -308,8 +308,8 @@
   //  (Supabase ← Project Settings ← API)
   //  لو تركتها فاضية، الدفتر يشتغل ويحفظ على الجوال بس بدون مزامنة
   // =====================================================================
-  const SB_URL = "";   // مثال: "https://abcdefgh.supabase.co"
-  const SB_KEY = "";   // anon key (eyJ...) أو publishable key (sb_publishable_...)
+  const SB_URL = "https://vuvdxyhwonobwtocutjy.supabase.co";   // مثال: "https://abcdefgh.supabase.co"
+  const SB_KEY = "sb_publishable_FqVcy8MFuetuEctMXTv64w_HTybJFUu";   // anon key (eyJ...) أو publishable key (sb_publishable_...)
   // =====================================================================
 
   const CLOUD = !!(SB_URL && SB_KEY);
@@ -591,7 +591,7 @@
     const out = S.type==="out";
     sh.seg.querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.t===S.type));
     sh.itemLbl.textContent = out ? "وش دفعت؟" : "وش الدخل؟";
-    sh.item.placeholder = out ? "مثال: شهادة سلامة" : "مثال: تحويل من شريك";
+    sh.item.placeholder = out ? "مثال: عربون" : "مثال: رسوم";
     sh.fPurpose.hidden = !out;
     sh.methodLbl.textContent = out ? "دفعت من" : "استلمته على";
     renderPickers(); renderDates(); renderSugg();
